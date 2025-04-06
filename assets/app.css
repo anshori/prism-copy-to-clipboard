@@ -1,0 +1,45 @@
+/* Prism Copy to Clipboard */
+@media print {
+
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Custom styles for theme */
+.code-wrapper {
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.code-wrapper>pre[class*="language-"] {
+	margin-top: 0;
+}
+
+.copy-button {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: flex;
+	align-items: center;
+	color: rgb(74, 237, 76);
+	cursor: pointer;
+	background: transparent;
+	/* background-color: #272822; */
+	background-color: #011627;
+	border: none;
+	border-radius: 2px;
+}
+
+.copy-button svg {
+	width: 1em;
+	margin-left: 0.25em;
+	opacity: 0.5;
+	transition: opacity 0.3s;
+}
+
+.copy-button:hover svg {
+	opacity: 1;
+}

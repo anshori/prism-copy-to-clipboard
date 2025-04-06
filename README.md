@@ -1,0 +1,1 @@
+# prism-copy-to-clipboard
